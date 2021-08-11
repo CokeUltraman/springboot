@@ -7,3 +7,6 @@ jdbc:
 spring:
   profiles:
     active:  abc
+#tomcat????
+server:
+  port:80
