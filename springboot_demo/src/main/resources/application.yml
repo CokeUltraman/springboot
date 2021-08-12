@@ -20,3 +20,9 @@ logging:
   level:
     com.itcast: debug
     org.springframework: info
+mybatis:
+#  real package rename
+  type-aliases-package: com.itcast.pojo
+#  mapper-locations: classpath:mappers/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
