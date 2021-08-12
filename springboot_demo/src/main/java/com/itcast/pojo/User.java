@@ -17,7 +17,7 @@ public class User {
     @KeySql(useGeneratedKeys = true)
     private Long id;
 
-    @Column(name="userName")
+    //@Column(name="userName")
     //user_name---->userName
     private String userName;
     private String password;
