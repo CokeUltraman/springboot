@@ -7,6 +7,11 @@ jdbc:
 spring:
   profiles:
     active:  abc
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springboot_test
+    username: root
+    password: root
 #tomcat????
 server:
   port: 80

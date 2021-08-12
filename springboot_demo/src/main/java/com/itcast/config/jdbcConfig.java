@@ -10,7 +10,7 @@ import org.springframework.context.annotation.PropertySource;
 
 import javax.sql.DataSource;
 
-@Configuration
+//@Configuration
 //@PropertySource("classpath:application.yml")
 //@EnableConfigurationProperties(JdbcProperties.class)
 public class jdbcConfig {
@@ -41,12 +41,12 @@ public class jdbcConfig {
 //        dataSource.setUrl(jdbcProperties.getUrl());
 //        return dataSource;
 //    }
-    @Bean
-    @ConfigurationProperties(prefix = "jdbc")
-    public DataSource dataSource(){
-        return new DruidDataSource();
-
-    }
+//    @Bean
+//    @ConfigurationProperties(prefix = "jdbc")
+//    public DataSource dataSource(){
+//        return new DruidDataSource();
+//
+//    }
 
 
 }
