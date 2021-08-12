@@ -1,8 +1,11 @@
 package com.itcast.mapper;
 
-import org.apache.ibatis.annotations.Mapper;
+import com.itcast.pojo.User;
+import org.springframework.context.annotation.Bean;
+import tk.mybatis.mapper.common.Mapper;
 
 
-public interface UserMapper {
+public interface UserMapper extends Mapper<User> {
+
 
 }
