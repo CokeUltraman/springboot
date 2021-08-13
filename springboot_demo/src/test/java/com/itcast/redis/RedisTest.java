@@ -51,7 +51,7 @@ public class RedisTest {
         redisTemplate.boundZSetOps("z_key").add("a",30);
         redisTemplate.boundZSetOps("z_key").add("b",20);
         redisTemplate.boundZSetOps("z_key").add("c",10);
-        set=redisTemplate.boundZSetOps("z_key").range(0,-1);
+        set=redisTemplate.boundZSetOps("z _key").range(0,-1);
         System.out.println(set);
 
     }

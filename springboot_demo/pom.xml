@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <packaging>war</packaging>
+
 
     <parent>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -78,5 +78,14 @@
             <version>1.4.7.RELEASE</version>
         </dependency>
     </dependencies>
-
+    <build>
+        <plugins>
+            <plugin>
+<!--                打jar包如果不配置该插件，打出来的jar包没有清单文件-->
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.5.3</version>
+            </plugin>
+        </plugins>
+    </build>
 </project>
